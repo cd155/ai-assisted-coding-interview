@@ -1,0 +1,16 @@
+[project]
+name = "linklock"
+version = "0.1.0"
+description = "A small magic-link / passwordless auth service."
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
