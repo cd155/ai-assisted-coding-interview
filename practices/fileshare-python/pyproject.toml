@@ -1,0 +1,16 @@
+[project]
+name = "fileshare"
+version = "0.1.0"
+description = "A small WeTransfer-style file sharing service."
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

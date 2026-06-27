@@ -1,0 +1,17 @@
+[project]
+name = "transcribe"
+version = "0.1.0"
+description = "A small Whisper-style transcription job queue."
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=2.0",
+    "requests>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
